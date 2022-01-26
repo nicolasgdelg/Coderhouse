@@ -393,3 +393,7 @@ display: flex;
         padding-bottom: 2rem;
     }
 }
+body{
+    background: rgb(36,19,0);
+    background: linear-gradient(0deg, rgba(36,19,0,1) 0%, rgba(212,105,22,0.00043767507002800965) 5%, rgba(164,89,13,1) 100%);
+}
