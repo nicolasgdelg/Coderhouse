@@ -20,7 +20,11 @@ h1,h2,h3{
         font-size: 2.8rem ;
     }
 }
-.nav{
+.titulo{
+    font-weight: bold;
+    color: antiquewhite;
+}
+.nave{
     background-color: sienna;
     background-image: url(../image/portada.jpg);
     background-repeat: no-repeat;
@@ -99,6 +103,8 @@ h1,h2,h3{
     background-color: aliceblue;
     height: 250px;
     width: 700px;
+    border-radius: 3rem;
+    padding:2rem;
 }
 .izq{
     justify-content: left;
@@ -110,37 +116,13 @@ h1,h2,h3{
 }
 
 /** pagina de menu**/
+/**se elimina el botón menú porque me daba muchos problemas**/
 
-.boton {
-    background-color: aliceblue;
-    color: sienna;
-    padding: 1rem 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: .5rem;
-    width: 20%;
-    text-align: center;
-    border: none;
-    margin: 0 auto;
-}
-.boton:hover{
-    cursor: pointer;
-}
 .centro{
     display: flex;
     justify-items: center;
 }
-/**.centro{
-    padding-top: 7rem;
-    display: block;
-    width: 70px;
-    height: 70px;
-    align-content: center;
-    margin: 0 auto;
-    justify-content: flex-end;
-}**/
+/**se elimina clase que afectaba solo al botón**/
 
 @media (min-width:768px ){
     .producto{
