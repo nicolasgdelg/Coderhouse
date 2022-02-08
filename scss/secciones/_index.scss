@@ -1,0 +1,75 @@
+.titulo{
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sections{
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.parte1,
+.parte2,
+.parte3{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: sienna;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative ;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.parte1{
+  background-image: url(../image/img1.jfif);
+}
+.parte2 {
+  background-image: url(../image/img2.jpg);
+}
+.parte3{
+  background-image: url(../image/img3.jpg);
+}
+.parte1,
+.parte2,
+.parte3{
+  display: block;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.contenedores{
+  display: grid;
+  background-color: aliceblue;
+  height: 250px;
+  width: 700px;
+  border-radius: 3rem;
+  padding:2rem;
+}
+.izq{
+  justify-content: left;
+  grid-column: 1/2
+}
+.der{
+  justify-content: right;
+  grid-column: 2/3;
+}
+.izq,
+.der,
+.contenedores{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.parte1{
+  grid-column: 2/3;
+}

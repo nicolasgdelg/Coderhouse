@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import 'header-footer/header';
+
+@import "./secciones/index";
+@import './secciones/menu';
+@import './secciones/community';
+@import './secciones/aboutus';
+@import './secciones/contact';
+
+@import './header-footer/footer';
+
+//estilos generales
+body{
+  font-size:16px;
+  font-family: 'Krub', sans-serif;
+}
+body{
+  background: rgb(36,19,0);
+  background: linear-gradient(0deg, rgba(36,19,0,1) 0%, rgba(212,105,22,0.00043767507002800965) 5%, rgba(164,89,13,1) 100%);
+}
+h1{
+  font-size: 3.8rem;
+}
+h2{
+  font-size: 2.8rem;
+}
+h3{
+  font-size: 1.8rem;
+}
+h1,h2,h3{
+  text-align: center;
+}
+@media (max-width:622px) {
+  h1{
+    font-size: 2.8rem ;
+  }
+}
+@media (max-width:768px ) {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+//IMPORTACIONES
+
+//migrar a scss *finalizado*
+
+
+

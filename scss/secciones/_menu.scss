@@ -1,0 +1,79 @@
+/**se elimina el botón menú porque me daba muchos problemas**/
+
+
+.centro{
+  display: flex;
+  justify-items: center;
+}
+/**se elimina clase que afectaba solo al botón**/
+
+@media (min-width:768px ){
+  .producto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.producto{
+  justify-content: space-between;
+  margin:0 auto;
+  text-align: center;
+
+}
+.producto h3{
+  color: black;
+  font-weight: 400;
+}
+.producto p{
+  line-height: 2;
+  text-align: center;
+  background-color: sienna;
+  padding: 1rem;
+}
+.foto__receta{
+  grid-row: 1 / 2;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .foto__receta {
+    grid-column: 2 / 3;
+  }
+}
+.titulito{
+  text-align: center;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+.apartado{
+  padding: 5rem;
+}
+@media (max-width:768px ) {
+  .producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem 2rem;
+  }
+  .cu{
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+  }
+  .foto__receta{
+    height: 100%;
+    width: 100%;
+  }
+}
+.decor p:hover{
+  background-color: saddlebrown;
+  color: burlywood;
+  border-radius: 1rem;
+}

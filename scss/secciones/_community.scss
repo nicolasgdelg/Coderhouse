@@ -1,0 +1,86 @@
+.container {  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 1fr 2.6fr 1fr 0.5fr;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+
+}
+.header {
+
+  grid-area: header;
+}
+.recetas {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "recipe1 recipe2 recipe3"
+    "recipe4 recipe5 recipe6";
+  grid-area: body;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+.recipe{
+  text-align: center;
+  text-decoration: none;
+}
+.linkreceta{
+  text-decoration: none;
+  color: unset;
+}
+.receta1 {
+  grid-area: receta1;
+}
+.receta2 {
+  grid-area: receta2;
+}
+
+.receta3 {
+  grid-area: receta3;
+}
+
+.receta4 {
+  grid-area: receta4;
+}
+
+.receta5 {
+  grid-area: rreceta5;
+}
+
+.receta6 {
+  grid-area: receta6;
+}
+.ustedes {  display: grid;
+  grid-template-columns: 1.5fr 0.5fr 1fr;
+  grid-template-rows: 0.1fr 5fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "columna1 . columna2"
+    ". . .";
+  grid-area: ustedes;
+}
+.columna2 {
+  grid-area: columna2;
+}
+
+.columna1 {
+  grid-area: columna1;
+}
+@media (max-width:768px ) {
+  .recetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-template-areas: none;
+  }
+  .ustedes{
+    display: block;
+  }
+  .columna1,
+  .columna2{
+    /**al centro de cada fr pero no me sale**/
+  }
+}
