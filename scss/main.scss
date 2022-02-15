@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+//variables
+@import './variables/extend';
+@import './variables/maps';
+
+//secciones
 @import 'header-footer/header';
 
 @import "./secciones/index";

@@ -1,0 +1,13 @@
+$cadaUno: (
+    uno: #bbbbbb,
+    dos: #FF5733,
+    tres: #FFC301,
+    cuatro: #E38B78,
+);
+
+@each $frases, $color in $cadaUno{
+  .#{$frases}{
+    color: $color;
+    font-weight: bold;
+  }
+}
