@@ -73,7 +73,8 @@
   height: 450px;
   position: relative;
   margin-bottom: 2rem;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .bodyclass .parte1 {
   background-image: url(../image/img1.jfif); }
@@ -272,10 +273,7 @@
     gap: 1rem 1rem;
     grid-template-areas: none; }
   .ustedes {
-    display: block; }
-  .columna1,
-  .columna2 {
-    /**al centro de cada fr pero no me sale**/ } }
+    display: block; } }
 
 .redes {
   display: grid;
@@ -359,9 +357,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Krub', sans-serif; }
-
-body {
+  font-family: 'Krub', sans-serif;
   background: #241300;
   background: linear-gradient(0deg, #241300 0%, rgba(212, 105, 22, 0.000437675) 5%, #a4590d 100%); }
 
