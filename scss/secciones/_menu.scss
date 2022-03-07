@@ -68,8 +68,8 @@
     padding-bottom: 5rem;
   }
   .foto__receta{
-    height: 100%;
-    width: 100%;
+    width:100%;
+    object-fit: cover;
   }
 }
 .decor p:hover{

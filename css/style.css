@@ -65,8 +65,6 @@
 .bodyclass .parte1,
 .bodyclass .parte2,
 .bodyclass .parte3 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   background-color: sienna;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +75,7 @@
   text-align: center; }
 
 .bodyclass .parte1 {
-  background-image: url(../image/img1.jfif); }
+  background-image: url(../image/img1.jpg); }
 
 .bodyclass .parte2 {
   background-image: url(../image/img2.jpg); }
@@ -92,7 +90,7 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding-top: 10rem; }
+  padding: 2.5rem; }
 
 .titulo {
   font-weight: bold;
@@ -109,32 +107,17 @@
   padding-top: 2rem; }
 
 .contenedores {
-  display: grid;
   background-color: aliceblue;
   height: 250px;
   width: 700px;
-  border-radius: 3rem;
-  padding: 2rem; }
+  border-radius: 3rem; }
 
-.izq {
-  justify-content: left;
-  grid-column: 1/2; }
-
-.der {
-  justify-content: right;
-  grid-column: 2/3; }
-
-.izq,
-.der,
 .contenedores {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%; }
-
-.parte1 {
-  grid-column: 2/3; }
 
 /**se elimina el botón menú porque me daba muchos problemas**/
 .centro {
@@ -196,8 +179,8 @@
     margin-top: 4rem;
     padding-bottom: 5rem; }
   .foto__receta {
-    height: 100%;
-    width: 100%; } }
+    width: 100%;
+    object-fit: cover; } }
 
 .decor p:hover {
   background-color: saddlebrown;

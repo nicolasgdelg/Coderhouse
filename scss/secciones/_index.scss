@@ -3,8 +3,6 @@
   .parte1,
   .parte2,
   .parte3{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: sienna;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +13,7 @@
     text-align: center;
   }
   .parte1{
-    background-image: url(../image/img1.jfif);
+    background-image: url(../image/img1.jpg);
   }
   .parte2 {
     background-image: url(../image/img2.jpg);
@@ -30,7 +28,7 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    padding-top: 10rem;
+    padding: 2.5rem;
   }
 }
 
@@ -50,30 +48,16 @@
   padding-top: 2rem;
 }
 .contenedores{
-  display: grid;
   background-color: aliceblue;
   height: 250px;
   width: 700px;
   border-radius: 3rem;
-  padding:2rem;
 }
-.izq{
-  justify-content: left;
-  grid-column: 1/2
-}
-.der{
-  justify-content: right;
-  grid-column: 2/3;
-}
-.izq,
-.der,
+
 .contenedores{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-.parte1{
-  grid-column: 2/3;
 }
